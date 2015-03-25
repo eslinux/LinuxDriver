@@ -1,0 +1,7 @@
+/home/ninhld/freescale/SDK/7420LBV1170/source/linux-3.0.35/include
+/home/ninhld/freescale/SDK/7420LBV1170/source/linux-3.0.35/arch/arm/include
+test-driver
+hello_driver
+hello_kernel_module
+crypto-driver/TestApp
+crypto-driver
