@@ -2,7 +2,7 @@
 #include<linux/init.h>
 #include<linux/module.h>
 
-static int __init hello_init(void)
+static int hello_init(void)
 {	
 	printk(KERN_ALERT "Khoi tao thanh cong\n");
 	return 0;

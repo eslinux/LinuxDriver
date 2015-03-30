@@ -23,6 +23,7 @@ static int hello_init(void)
 	else{
 		printk(KERN_ALERT "Dang ky thiet bi thanh cong voi MajorID=%d\n",Major);
 	}
+	
 	return 0;
 }
 
