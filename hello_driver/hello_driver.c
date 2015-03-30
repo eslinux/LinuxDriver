@@ -25,7 +25,6 @@ static int hello_init(void)
 	}
 	
 	return 0;
-	
 }
 
 
