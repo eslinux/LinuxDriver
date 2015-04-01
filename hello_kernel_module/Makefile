@@ -1,6 +1,6 @@
 TARGET := hello_kernel_module
 #KROOT = /home/ninhld/freescale/SDK/7420LBV1170/source/linux-3.0.35 source in setenv.sh
-#KROOT = /lib/modules/$(shell uname ­r)/build
+KROOT = /lib/modules/$(shell uname -r)/build
 
 obj-m += hello_kernel_module.o
 

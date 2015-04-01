@@ -2,8 +2,13 @@
 #include<linux/init.h>
 #include<linux/module.h>
 
+<<<<<<< HEAD
 static int __init hello_init(void)
 {
+=======
+static int hello_init(void)
+{	
+>>>>>>> 2d441b1d4aab0b1291371a4f5dce607f793bd8ac
 	printk(KERN_ALERT "Khoi tao thanh cong\n");
 	return 0;
 }
