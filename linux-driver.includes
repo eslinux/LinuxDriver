@@ -1,7 +1,32 @@
-/home/ninhld/freescale/SDK/7420LBV1170/source/linux-3.0.35/include
-/home/ninhld/freescale/SDK/7420LBV1170/source/linux-3.0.35/arch/arm/include
+/home/ninhld/Zynq706/SDK/linux-xlnx/include
+/home/ninhld/Zynq706/SDK/linux-xlnx/arch/arm
+/home/ninhld/Zynq706/SDK/linux-xlnx/arch/arm/include
 test-driver
 hello_driver
 hello_kernel_module
 crypto-driver/TestApp
 crypto-driver
+Driver cho Leds
+Driver cho Buttons
+Driver cho Leds/Test driver
+Driver cho Buttons/Test driver
+Driver ket hop cho Leds va Buttons/Test
+Driver ket hop cho Leds va Buttons
+examples/scullv
+examples/usb
+examples/include
+examples/simple
+examples/short
+examples/scull
+examples/shortprint
+examples/tty
+examples/lddbus
+examples/sbull
+examples/scullc
+examples/misc-progs
+examples/sculld
+examples/skull
+examples/misc-modules
+examples/snull
+examples/pci
+examples/scullp

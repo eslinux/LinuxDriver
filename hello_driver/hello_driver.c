@@ -11,7 +11,7 @@ static struct file_operations fops={
 	.read=hello_read,
 };
 
-static int hello_init(void)
+static int __init hello_init(void)
 {
 	//Đăng ký thiết bị kiểu character với major id hệ thống cung cấp
 
@@ -27,7 +27,7 @@ static int hello_init(void)
 }
 
 
-static void hello_exit(void)
+static void __exit hello_exit(void)
 {
 	//Giải phóng thiết bị đã đăng ký
 	unregister_chrdev(Major,"KTMT­Device");
@@ -43,3 +43,7 @@ static ssize_t hello_read(struct file *filp, char *buffer, size_t length, loff_t
 
 module_init(hello_init);
 module_exit(hello_exit);
+
+MODULE_LICENSE("GPL");
+MODULE_AUTHOR("NINHLD");
+MODULE_VERSION("1.0.0");

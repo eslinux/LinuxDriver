@@ -1,20 +1,38 @@
-cmd_/home/ninhld/freescale/develop/Driver/hello_kernel_module/hello_kernel_module.o := /home/ninhld/freescale/SDK/7420LBV1170/cross_compiler/fsl-linaro-toolchain/bin/arm-none-linux-gnueabi-gcc -Wp,-MD,/home/ninhld/freescale/develop/Driver/hello_kernel_module/.hello_kernel_module.o.d  -nostdinc -isystem /home/ninhld/freescale/SDK/7420LBV1170/cross_compiler/fsl-linaro-toolchain/bin/../lib/gcc/arm-fsl-linux-gnueabi/4.6.2/include -I/home/ninhld/freescale/SDK/7420LBV1170/source/linux-3.0.35/arch/arm/include -Iarch/arm/include/generated -Iinclude  -include include/generated/autoconf.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-mx6/include -Iarch/arm/plat-mxc/include -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -fno-delete-null-pointer-checks -Os -marm -fno-dwarf2-cfi-asm -mabi=aapcs-linux -mno-thumb-interwork -funwind-tables -D__LINUX_ARM_ARCH__=7 -march=armv7-a -msoft-float -Uarm -Wframe-larger-than=1024 -fno-stack-protector -Wno-unused-but-set-variable -fomit-frame-pointer -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack -DCC_HAVE_ASM_GOTO  -DMODULE  -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(hello_kernel_module)"  -D"KBUILD_MODNAME=KBUILD_STR(hello_kernel_module)" -c -o /home/ninhld/freescale/develop/Driver/hello_kernel_module/.tmp_hello_kernel_module.o /home/ninhld/freescale/develop/Driver/hello_kernel_module/hello_kernel_module.c
+cmd_/home/ninhld/Github/LinuxDriver/hello_kernel_module/hello_kernel_module.o := /home/ninhld/freescale/SDK/7420LBV1170/cross_compiler/fsl-linaro-toolchain/bin/arm-none-linux-gnueabi-gcc -Wp,-MD,/home/ninhld/Github/LinuxDriver/hello_kernel_module/.hello_kernel_module.o.d  -nostdinc -isystem /home/ninhld/freescale/SDK/7420LBV1170/cross_compiler/fsl-linaro-toolchain/bin/../lib/gcc/arm-fsl-linux-gnueabi/4.6.2/include -I/home/ninhld/freescale/SDK/7420LBV1170/source/linux-3.0.35/arch/arm/include -Iarch/arm/include/generated -Iinclude  -include include/generated/autoconf.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-mx6/include -Iarch/arm/plat-mxc/include -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -fno-delete-null-pointer-checks -Os -marm -fno-dwarf2-cfi-asm -mabi=aapcs-linux -mno-thumb-interwork -funwind-tables -D__LINUX_ARM_ARCH__=7 -march=armv7-a -msoft-float -Uarm -Wframe-larger-than=1024 -fno-stack-protector -Wno-unused-but-set-variable -fomit-frame-pointer -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack -DCC_HAVE_ASM_GOTO  -DMODULE  -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(hello_kernel_module)"  -D"KBUILD_MODNAME=KBUILD_STR(hello_kernel_module)" -c -o /home/ninhld/Github/LinuxDriver/hello_kernel_module/.tmp_hello_kernel_module.o /home/ninhld/Github/LinuxDriver/hello_kernel_module/hello_kernel_module.c
 
-source_/home/ninhld/freescale/develop/Driver/hello_kernel_module/hello_kernel_module.o := /home/ninhld/freescale/develop/Driver/hello_kernel_module/hello_kernel_module.c
+source_/home/ninhld/Github/LinuxDriver/hello_kernel_module/hello_kernel_module.o := /home/ninhld/Github/LinuxDriver/hello_kernel_module/hello_kernel_module.c
 
-deps_/home/ninhld/freescale/develop/Driver/hello_kernel_module/hello_kernel_module.o := \
-  include/linux/kernel.h \
-    $(wildcard include/config/lbdaf.h) \
-    $(wildcard include/config/preempt/voluntary.h) \
-    $(wildcard include/config/debug/spinlock/sleep.h) \
-    $(wildcard include/config/prove/locking.h) \
-    $(wildcard include/config/ring/buffer.h) \
+deps_/home/ninhld/Github/LinuxDriver/hello_kernel_module/hello_kernel_module.o := \
+  include/linux/module.h \
+    $(wildcard include/config/symbol/prefix.h) \
+    $(wildcard include/config/sysfs.h) \
+    $(wildcard include/config/modules.h) \
+    $(wildcard include/config/modversions.h) \
+    $(wildcard include/config/unused/symbols.h) \
+    $(wildcard include/config/generic/bug.h) \
+    $(wildcard include/config/kallsyms.h) \
+    $(wildcard include/config/smp.h) \
+    $(wildcard include/config/tracepoints.h) \
     $(wildcard include/config/tracing.h) \
-    $(wildcard include/config/numa.h) \
-    $(wildcard include/config/compaction.h) \
+    $(wildcard include/config/event/tracing.h) \
     $(wildcard include/config/ftrace/mcount/record.h) \
-  /home/ninhld/freescale/SDK/7420LBV1170/cross_compiler/fsl-linaro-toolchain/bin/../lib/gcc/arm-fsl-linux-gnueabi/4.6.2/include/stdarg.h \
-  include/linux/linkage.h \
+    $(wildcard include/config/module/unload.h) \
+    $(wildcard include/config/constructors.h) \
+    $(wildcard include/config/debug/set/module/ronx.h) \
+  include/linux/list.h \
+    $(wildcard include/config/debug/list.h) \
+  include/linux/types.h \
+    $(wildcard include/config/uid16.h) \
+    $(wildcard include/config/lbdaf.h) \
+    $(wildcard include/config/arch/dma/addr/t/64bit.h) \
+    $(wildcard include/config/phys/addr/t/64bit.h) \
+    $(wildcard include/config/64bit.h) \
+  /home/ninhld/freescale/SDK/7420LBV1170/source/linux-3.0.35/arch/arm/include/asm/types.h \
+  include/asm-generic/int-ll64.h \
+  /home/ninhld/freescale/SDK/7420LBV1170/source/linux-3.0.35/arch/arm/include/asm/bitsperlong.h \
+  include/asm-generic/bitsperlong.h \
+  include/linux/posix_types.h \
+  include/linux/stddef.h \
   include/linux/compiler.h \
     $(wildcard include/config/sparse/rcu/pointer.h) \
     $(wildcard include/config/trace/branch/profiling.h) \
@@ -25,22 +43,28 @@ deps_/home/ninhld/freescale/develop/Driver/hello_kernel_module/hello_kernel_modu
     $(wildcard include/config/arch/supports/optimized/inlining.h) \
     $(wildcard include/config/optimize/inlining.h) \
   include/linux/compiler-gcc4.h \
-  /home/ninhld/freescale/SDK/7420LBV1170/source/linux-3.0.35/arch/arm/include/asm/linkage.h \
-  include/linux/stddef.h \
-  include/linux/types.h \
-    $(wildcard include/config/uid16.h) \
-    $(wildcard include/config/arch/dma/addr/t/64bit.h) \
-    $(wildcard include/config/phys/addr/t/64bit.h) \
-    $(wildcard include/config/64bit.h) \
-  /home/ninhld/freescale/SDK/7420LBV1170/source/linux-3.0.35/arch/arm/include/asm/types.h \
-  include/asm-generic/int-ll64.h \
-  /home/ninhld/freescale/SDK/7420LBV1170/source/linux-3.0.35/arch/arm/include/asm/bitsperlong.h \
-  include/asm-generic/bitsperlong.h \
-  include/linux/posix_types.h \
   /home/ninhld/freescale/SDK/7420LBV1170/source/linux-3.0.35/arch/arm/include/asm/posix_types.h \
+  include/linux/poison.h \
+    $(wildcard include/config/illegal/pointer/value.h) \
+  include/linux/const.h \
+  include/linux/stat.h \
+  /home/ninhld/freescale/SDK/7420LBV1170/source/linux-3.0.35/arch/arm/include/asm/stat.h \
+  include/linux/time.h \
+    $(wildcard include/config/arch/uses/gettimeoffset.h) \
+  include/linux/cache.h \
+    $(wildcard include/config/arch/has/cache/line/size.h) \
+  include/linux/kernel.h \
+    $(wildcard include/config/preempt/voluntary.h) \
+    $(wildcard include/config/debug/spinlock/sleep.h) \
+    $(wildcard include/config/prove/locking.h) \
+    $(wildcard include/config/ring/buffer.h) \
+    $(wildcard include/config/numa.h) \
+    $(wildcard include/config/compaction.h) \
+  /home/ninhld/freescale/SDK/7420LBV1170/cross_compiler/fsl-linaro-toolchain/bin/../lib/gcc/arm-fsl-linux-gnueabi/4.6.2/include/stdarg.h \
+  include/linux/linkage.h \
+  /home/ninhld/freescale/SDK/7420LBV1170/source/linux-3.0.35/arch/arm/include/asm/linkage.h \
   include/linux/bitops.h \
   /home/ninhld/freescale/SDK/7420LBV1170/source/linux-3.0.35/arch/arm/include/asm/bitops.h \
-    $(wildcard include/config/smp.h) \
   /home/ninhld/freescale/SDK/7420LBV1170/source/linux-3.0.35/arch/arm/include/asm/system.h \
     $(wildcard include/config/function/graph/tracer.h) \
     $(wildcard include/config/cpu/32v6k.h) \
@@ -86,38 +110,14 @@ deps_/home/ninhld/freescale/develop/Driver/hello_kernel_module/hello_kernel_modu
     $(wildcard include/config/printk.h) \
     $(wildcard include/config/dynamic/debug.h) \
   include/linux/init.h \
-    $(wildcard include/config/modules.h) \
     $(wildcard include/config/hotplug.h) \
   include/linux/dynamic_debug.h \
   /home/ninhld/freescale/SDK/7420LBV1170/source/linux-3.0.35/arch/arm/include/asm/bug.h \
     $(wildcard include/config/bug.h) \
     $(wildcard include/config/debug/bugverbose.h) \
   include/asm-generic/bug.h \
-    $(wildcard include/config/generic/bug.h) \
     $(wildcard include/config/generic/bug/relative/pointers.h) \
   /home/ninhld/freescale/SDK/7420LBV1170/source/linux-3.0.35/arch/arm/include/asm/div64.h \
-  include/linux/module.h \
-    $(wildcard include/config/symbol/prefix.h) \
-    $(wildcard include/config/sysfs.h) \
-    $(wildcard include/config/modversions.h) \
-    $(wildcard include/config/unused/symbols.h) \
-    $(wildcard include/config/kallsyms.h) \
-    $(wildcard include/config/tracepoints.h) \
-    $(wildcard include/config/event/tracing.h) \
-    $(wildcard include/config/module/unload.h) \
-    $(wildcard include/config/constructors.h) \
-    $(wildcard include/config/debug/set/module/ronx.h) \
-  include/linux/list.h \
-    $(wildcard include/config/debug/list.h) \
-  include/linux/poison.h \
-    $(wildcard include/config/illegal/pointer/value.h) \
-  include/linux/const.h \
-  include/linux/stat.h \
-  /home/ninhld/freescale/SDK/7420LBV1170/source/linux-3.0.35/arch/arm/include/asm/stat.h \
-  include/linux/time.h \
-    $(wildcard include/config/arch/uses/gettimeoffset.h) \
-  include/linux/cache.h \
-    $(wildcard include/config/arch/has/cache/line/size.h) \
   /home/ninhld/freescale/SDK/7420LBV1170/source/linux-3.0.35/arch/arm/include/asm/cache.h \
     $(wildcard include/config/arm/l1/cache/shift.h) \
     $(wildcard include/config/aeabi.h) \
@@ -333,6 +333,6 @@ deps_/home/ninhld/freescale/develop/Driver/hello_kernel_module/hello_kernel_modu
   include/trace/events/module.h \
   include/trace/define_trace.h \
 
-/home/ninhld/freescale/develop/Driver/hello_kernel_module/hello_kernel_module.o: $(deps_/home/ninhld/freescale/develop/Driver/hello_kernel_module/hello_kernel_module.o)
+/home/ninhld/Github/LinuxDriver/hello_kernel_module/hello_kernel_module.o: $(deps_/home/ninhld/Github/LinuxDriver/hello_kernel_module/hello_kernel_module.o)
 
-$(deps_/home/ninhld/freescale/develop/Driver/hello_kernel_module/hello_kernel_module.o):
+$(deps_/home/ninhld/Github/LinuxDriver/hello_kernel_module/hello_kernel_module.o):

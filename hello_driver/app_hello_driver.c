@@ -16,6 +16,7 @@
 
 int main(int argc, char** argv)
 {
+
 	int fd;
 	int result,rt;
 	fd = open(argv[1], 0);
