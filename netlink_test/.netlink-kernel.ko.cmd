@@ -1,0 +1,1 @@
+cmd_/home/ninhld/Github/LinuxDriver/netlink_test/netlink-kernel.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/ninhld/Github/LinuxDriver/netlink_test/netlink-kernel.ko /home/ninhld/Github/LinuxDriver/netlink_test/netlink-kernel.o /home/ninhld/Github/LinuxDriver/netlink_test/netlink-kernel.mod.o

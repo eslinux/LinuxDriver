@@ -1,0 +1,1 @@
+cmd_/home/ninhld/Github/LinuxDriver/chardev/nulldriver.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/ninhld/Github/LinuxDriver/chardev/nulldriver.ko /home/ninhld/Github/LinuxDriver/chardev/nulldriver.o /home/ninhld/Github/LinuxDriver/chardev/nulldriver.mod.o

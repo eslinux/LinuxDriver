@@ -1,0 +1,1 @@
+cmd_/home/ninhld/Github/LinuxDriver_/netfilter/netfilter1.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/ninhld/Github/LinuxDriver_/netfilter/netfilter1.ko /home/ninhld/Github/LinuxDriver_/netfilter/netfilter1.o /home/ninhld/Github/LinuxDriver_/netfilter/netfilter1.mod.o
