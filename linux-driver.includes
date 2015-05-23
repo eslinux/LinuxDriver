@@ -1,11 +1,18 @@
+<<<<<<< HEAD
+/lib/modules/3.18.9-100.fc20.x86_64/build/include
+=======
 /home/ninhld/Zynq706/SDK/linux-xlnx/include
 /home/ninhld/Zynq706/SDK/linux-xlnx/arch/arm
 /home/ninhld/Zynq706/SDK/linux-xlnx/arch/arm/include
+>>>>>>> 77ca60e62449848d0b9d4fa9b6d85dd525163d61
 test-driver
 hello_driver
 hello_kernel_module
 crypto-driver/TestApp
 crypto-driver
+<<<<<<< HEAD
+chardev
+=======
 Driver cho Leds
 Driver cho Buttons
 Driver cho Leds/Test driver
@@ -30,3 +37,12 @@ examples/misc-modules
 examples/snull
 examples/pci
 examples/scullp
+>>>>>>> 77ca60e62449848d0b9d4fa9b6d85dd525163d61
+netfilter/ex1
+netfilter/ex2
+likely
+multi-kthread
+rcu
+many-feature
+Netlink_test
+netlink_test
